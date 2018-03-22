@@ -1,0 +1,2 @@
+sprawdŸ baze g³ównie AI dla wszystkich
+base_url() skrót do linków

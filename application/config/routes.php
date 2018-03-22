@@ -1,0 +1,36 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+$route['default_controller'] = 'productsController'; //Tak będzie 'indexController';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+$route['users/(:num)'] = 'userController';
+$route['wyswietlanie/(:num)'] = 'productsController/wyswietlanie';
+$route['users'] = 'userController';
+$route['podkat/(:num)'] = 'productsController/podKategorie';
+$route['dodk'] ='productsController/dodkat';
+$route['dodpk'] ='productsController/dodpodkat';
+$route['dodp'] ='productsController/dodprodukt';
+$route['Produkty'] ='productsController/wyswietlanieProduktu';
+$route['EdycjaKategorii']='productsController/edytujk';
+$route['EdycjaPodkategorii']='productsController/edytujpk';
+$route['EdycjaStatusu']='productsController/edytujstatus';
+$route['admin']='productsController/adminpanel';
+$route['zarejestruj']='userController/rejestracja';
+$route['rejestracja']='userController/skryptrejestracja';
+$route['zaloguj']='userController/logowanie';
+$route['logowanie']='userController/skryptlogowanie';
+$route['koszyk']='productsController/koszyk';
+$route['czysc']='productsController/czysc';
+$route['dodawanie']='productsController/dodawanie';
+$route['SingleView']='productsController/SingleView';
+$route['wyloguj']='userController/wyloguj';
+$route['kupowanie']='transakcjeController/kup';
+$route['zamowienia/(:num)']='productsController/statusy';
+$route['status']='productsController/status';
+$route['edycjaproduktu']='productsController/edycjaproduktu';
+$route['edycjapr']='productsController/edycjapr';
+$route['formep']='productsController/formep';
+$route['produkty']='productsController/wyswietlanie';
+$route['produkty/:num']='productsController/wyswietlanie';
+$route['kt']='productsController/konkretnetowary';
